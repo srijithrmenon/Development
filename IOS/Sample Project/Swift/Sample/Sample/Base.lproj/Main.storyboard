@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="o8V-p0-QXs">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Trova Sample Swift-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="ViewControllerIdentifier" id="BYZ-38-t0r" customClass="ViewController" customModule="Sample" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="idr-IU-w1h" userLabel="Audio">
+                                <rect key="frame" x="65" y="309" width="48" height="48"/>
+                                <state key="normal" image="audioCallDash"/>
+                                <connections>
+                                    <action selector="AudioButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5vo-GY-vat"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dZZ-Qs-bPf" userLabel="Video">
+                                <rect key="frame" x="163" y="309" width="48" height="48"/>
+                                <state key="normal" image="videoCallDash"/>
+                                <connections>
+                                    <action selector="VideoButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="i1K-c5-y51"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H84-gm-cU6" userLabel="Chat">
+                                <rect key="frame" x="261" y="309" width="48" height="48"/>
+                                <state key="normal" image="chatDash"/>
+                                <connections>
+                                    <action selector="ChatButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ASA-jb-JAb"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="dZZ-Qs-bPf" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="2P9-n6-vMx"/>
+                            <constraint firstItem="dZZ-Qs-bPf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="MoE-dg-IHI"/>
+                            <constraint firstItem="H84-gm-cU6" firstAttribute="leading" secondItem="dZZ-Qs-bPf" secondAttribute="trailing" constant="50" id="WkE-eY-ssS"/>
+                            <constraint firstItem="idr-IU-w1h" firstAttribute="trailing" secondItem="dZZ-Qs-bPf" secondAttribute="leading" constant="-50" id="g8i-zE-Shm"/>
+                            <constraint firstItem="idr-IU-w1h" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="kxc-nQ-4DZ"/>
+                            <constraint firstItem="H84-gm-cU6" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="sL2-o5-zOk"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Trova Sample Swift" id="Jmb-xx-6xk"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1079.2" y="127.28635682158921"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="STc-Ra-f1K">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="o8V-p0-QXs" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="1DU-05-xUx">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="XjT-qn-io2"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="l6m-r2-8il" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="332" y="-555.47226386806597"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="audioCallDash" width="48" height="48"/>
+        <image name="chatDash" width="48" height="48"/>
+        <image name="videoCallDash" width="48" height="48"/>
+    </resources>
+</document>

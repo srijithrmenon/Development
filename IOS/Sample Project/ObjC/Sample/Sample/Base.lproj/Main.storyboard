@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="7RJ-Rz-8F1">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Trova Sample ObjC-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="viewControllerIdentifier" id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g0j-vf-CpM" userLabel="AudioButton">
+                                <rect key="frame" x="55" y="309" width="48" height="48"/>
+                                <state key="normal" image="audioCallDash"/>
+                                <connections>
+                                    <action selector="audioBtnTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4tk-NR-I2t"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ueC-eB-t7c" userLabel="VideoButton">
+                                <rect key="frame" x="163" y="309" width="48" height="48"/>
+                                <state key="normal" image="videoCallDash"/>
+                                <connections>
+                                    <action selector="videoBtnTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zR7-oR-ar2"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XFQ-6Y-b2d" userLabel="ChatButton">
+                                <rect key="frame" x="271" y="309" width="48" height="48"/>
+                                <state key="normal" image="chatDash"/>
+                                <connections>
+                                    <action selector="chatBtnTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="J4L-IV-K0g"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="ueC-eB-t7c" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="8ti-bW-b5M"/>
+                            <constraint firstItem="g0j-vf-CpM" firstAttribute="trailing" secondItem="ueC-eB-t7c" secondAttribute="leading" constant="-60" id="FTp-hD-fnC"/>
+                            <constraint firstItem="XFQ-6Y-b2d" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="MG2-5W-Idh"/>
+                            <constraint firstItem="ueC-eB-t7c" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="iof-dz-RR3"/>
+                            <constraint firstItem="XFQ-6Y-b2d" firstAttribute="leading" secondItem="ueC-eB-t7c" secondAttribute="trailing" constant="60" id="ugl-eb-vAi"/>
+                            <constraint firstItem="g0j-vf-CpM" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="yIk-gk-K1u"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Trova Sample ObjC" id="Rf7-cM-csV"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="972" y="38.23088455772114"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="q4H-1Q-PlW">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="7RJ-Rz-8F1" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ZJH-dr-gUu">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="IuQ-hv-ruY"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cyc-Mu-H40" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="93.599999999999994" y="-644.52773613193403"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="audioCallDash" width="48" height="48"/>
+        <image name="chatDash" width="48" height="48"/>
+        <image name="videoCallDash" width="48" height="48"/>
+    </resources>
+</document>

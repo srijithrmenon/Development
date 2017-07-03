@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>AWSCognito.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>0</integer>
+		</dict>
+		<key>AWSCore.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
+		<key>AWSS3.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
+		<key>Pods-Sample.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>3</integer>
+		</dict>
+		<key>Socket.IO-Client-Swift.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>4</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>53C6112213829CB147F47E473C93F271</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>9F7098779713B711F6C591B62A41F242</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>C83B0F8778708382BFD09745CBCD1CBA</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>DB7C7AD40F66A85D7493989203CEF182</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E8A81524B5DA16DE16314FB59D37C5B3</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>
